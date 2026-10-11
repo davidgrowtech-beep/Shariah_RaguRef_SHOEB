@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>HAFIZ SHAKIL TRADER INDIA(Halal Work)™</title>
-<meta name="description" content="Join King of Nifty by HAFIZ SHAKIL TRADER INDIA(Halal Work)™ for free daily analysis, Nifty & BankNifty levels, and expert stock market education.">
+<meta name="description" content="Join HAFIZ SHAKIL TRADER INDIA(Halal Work)™ for free daily market analysis, Nifty & BankNifty levels and stock market education.">
 <meta property="og:title" content="KING OF NIFTY - HAFIZ SHAKIL TRADER INDIA(Halal Work)™">
-<meta property="og:description" content="Join 50,000+ traders for FREE daily calls.">
+<meta property="og:description" content="Free daily market analysis and stock market education on Telegram.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@500;600;700;800&family=Noto+Nastaliq+Urdu:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://connect.facebook.net" crossorigin>
 
 <style>
 :root{
@@ -227,6 +227,35 @@ h1{
   .logo-ring{width:98px;height:98px;}
   h1{font-size:20px;}
 }
+
+.tgi{width:19px;height:19px;fill:currentColor;flex:none}
+.btn-secondary .tgi{width:18px;height:18px}
+.sheet{position:fixed;inset:0;z-index:2000;display:none;align-items:flex-end;justify-content:center;background:rgba(2,10,6,.8)}
+.sheet.show{display:flex}
+.sh-box{position:relative;width:100%;max-width:480px;background:#0a1a13;border:1px solid var(--border);border-radius:24px 24px 0 0;padding:24px 18px calc(22px + env(safe-area-inset-bottom));text-align:center;animation:shUp .3s ease both}
+@keyframes shUp{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+.sh-box h3{font-family:'Cinzel',serif;font-size:21px;font-weight:800;color:var(--gold-bright);margin-bottom:2px}
+.sh-box .urdu{font-size:15px;color:var(--emerald-bright)}
+.sh-box ol{list-style:none;text-align:left;margin:14px 0 18px;display:grid;gap:10px;counter-reset:q}
+.sh-box li{counter-increment:q;display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px 14px;font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.5}
+.sh-box li::before{content:counter(q);flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#1a1206;font-weight:800;font-size:13px}
+.sh-box li small{display:block;color:var(--ink-soft);font-weight:500;font-size:12px}
+.sh-box .btn{margin-bottom:0;animation:nudgeGlow 1.2s ease-in-out infinite}
+.sh-x{position:absolute;top:10px;right:12px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:transparent;color:var(--ink-soft);font-size:16px;cursor:pointer}
+.rb{position:fixed;left:12px;right:12px;bottom:calc(84px + env(safe-area-inset-bottom));z-index:1500;max-width:416px;margin:0 auto;background:var(--gold);color:#1a1206;border-radius:14px;padding:12px 14px;font-weight:700;font-size:13.5px;line-height:1.45;box-shadow:0 10px 30px rgba(0,0,0,.55);display:none;text-align:center}
+.rb small{display:block;font-weight:600;opacity:.85}
+.rb a{display:block;margin-top:8px;background:#04170e;color:#fff;padding:10px;border-radius:10px;font-weight:800;text-decoration:none}
+.ov{position:fixed;inset:0;z-index:3000;background:rgba(2,10,6,.85);display:none;align-items:center;justify-content:center;padding:18px}
+.ov.show{display:flex}
+.ov .box{width:min(400px,100%);background:#0a1a13;border:1px solid var(--border);border-radius:22px;padding:22px 18px;text-align:center}
+.ov h3{font-size:18px;margin-bottom:4px;color:var(--gold-bright)}
+.ov p{color:var(--ink-soft);font-size:13px;margin-bottom:12px}
+.ob{display:block;width:100%;margin-top:9px;padding:14px;border-radius:13px;font:700 14.5px 'Manrope',sans-serif;border:1.5px solid rgba(255,255,255,.18);background:transparent;color:var(--ink);cursor:pointer;text-align:center;text-decoration:none}
+.ob.p{background:linear-gradient(135deg,var(--gold-bright),var(--gold) 45%,var(--gold-deep));color:#04170e;border-color:transparent}
+.ib{display:none;position:fixed;top:0;left:0;right:0;z-index:4000;background:var(--gold);color:#1a1206;font-weight:700;font-size:12.5px;line-height:1.4;padding:9px 12px;text-align:center}
+.ib.show{display:block}
+@media(min-width:600px){.sheet{align-items:center}.sh-box{border-radius:24px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important}}
 </style>
 
 <!-- Meta Pixel Code -->
@@ -239,8 +268,7 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1473631447956433');
-fbq('track', 'PageView');
+fbq('init', '1473631447956433');   /* PageView is sent later, only for real humans */
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1473631447956433&ev=PageView&noscript=1"
@@ -249,12 +277,14 @@ src="https://www.facebook.com/tr?id=1473631447956433&ev=PageView&noscript=1"
 </head>
 <body>
 
+<div class="ib" id="ib">Telegram نہ کھلے تو ⋯ دبا کر "Open in Browser / Safari" چنیں<br>If Telegram does not open: tap ⋯ → Open in Browser / Safari</div>
+
 <div class="aurora"><span class="a1"></span><span class="a2"></span></div>
 <div class="lattice"></div>
 
 <div class="wrapper">
   <div class="card">
-    <div class="live-badge"><span class="dot"></span> 5,947 traders online now</div>
+    <div class="live-badge"><span class="dot"></span> Free Learning Community</div>
 
     <div class="logo-wrap">
       <div class="logo-ring">
@@ -262,45 +292,41 @@ src="https://www.facebook.com/tr?id=1473631447956433&ev=PageView&noscript=1"
           <img src="SM.jpg" alt="HAFIZ SHAKIL TRADER INDIA(Halal Work)™">
         </div>
       </div>
-      <div class="check-badge"><i class="fas fa-check"></i></div>
     </div>
 
     <h1>HAFIZ SHAKIL TRADER INDIA(Halal Work)™</h1>
-    <div class="subline-urdu urdu" dir="rtl">🏆 ہندوستان کا نمبر 1 اسٹاک مارکیٹ چینل</div>
-    <div class="rating"><span class="stars">★★★★★</span> 4.9/5 (2,440 reviews)</div>
-
+    <div class="subline-urdu urdu" dir="rtl">📚 اسٹاک مارکیٹ کی تعلیم اور روزانہ تجزیہ</div>
     <div class="stats">
-      <div class="stats-item"><span class="num">50K+</span>Members</div>
-      <div class="stats-item"><span class="num">5+ Yrs</span>Experience</div>
-      <div class="stats-item"><span class="num">95%</span>Accuracy</div>
+      <div class="stats-item"><span class="num">100%</span>Free to join</div>
+      <div class="stats-item"><span class="num">Daily</span>Market levels</div>
+      <div class="stats-item"><span class="num">0</span>Paid tips</div>
     </div>
 
-    <button class="btn telegram-link" id="telegramBtn">
-      <i class="fab fa-telegram" style="font-size:17px;"></i> Join Free Telegram Channel
-    </button>
-    <a href="#" class="fallback-link" id="fallbackLink">Redirect nahi hua? Yahan tap karo</a>
+    <a class="btn telegram-link" id="telegramBtn" href="https://t.me/+iSwpbjdjjHk2Zjc9" data-tg>
+      <svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 3.2 18.5 20c-.25 1.18-.91 1.47-1.85.92l-5-3.68-2.41 2.32c-.27.27-.49.49-1 .49l.36-5.09 9.26-8.37c.4-.36-.09-.56-.63-.2L5.78 13.6.85 12.06c-1.07-.34-1.09-1.07.22-1.58L20.35 3c.9-.33 1.68.2 1.45.2Z"/></svg> Join Free Telegram Channel
+    </a>
 
-    <p class="pitch">Get <span>FREE daily calls</span> for NIFTY, BANKNIFTY & SENSEX</p>
-    <p class="pitch-urdu urdu" dir="rtl">روزانہ مفت پریمیم تجزیہ حاصل کرنے والے ہزاروں تاجروں میں شامل ہوں۔</p>
+    <p class="pitch">Get <span>FREE daily market analysis</span> for NIFTY, BANKNIFTY & SENSEX</p>
+    <p class="pitch-urdu urdu" dir="rtl">روزانہ مفت مارکیٹ تجزیہ اور تعلیمی مواد حاصل کریں۔</p>
 
-    <div class="urgency-line" id="urgencyLine">🔥 <span id="countTxt">30</span>s — محدود مفت رسائی!</div>
+    <div class="urgency-line">👆 Telegram کھلتے ہی <b>“Request to Join”</b> ضرور دبائیں · Tap “Request to Join”</div>
 
-    <button class="btn telegram-link" id="telegramBtnMid">
-      <i class="fab fa-telegram" style="font-size:17px;"></i> Join Free Telegram Channel
-    </button>
+    <a class="btn telegram-link" id="telegramBtnMid" href="https://t.me/+iSwpbjdjjHk2Zjc9" data-tg>
+      <svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 3.2 18.5 20c-.25 1.18-.91 1.47-1.85.92l-5-3.68-2.41 2.32c-.27.27-.49.49-1 .49l.36-5.09 9.26-8.37c.4-.36-.09-.56-.63-.2L5.78 13.6.85 12.06c-1.07-.34-1.09-1.07.22-1.58L20.35 3c.9-.33 1.68.2 1.45.2Z"/></svg> Join Free Telegram Channel
+    </a>
 
     <div class="features">
       <div class="feat"><div class="feat-icon">📊</div><span class="feat-text">Daily Nifty & BankNifty Levels</span></div>
       <div class="feat"><div class="feat-icon">🎓</div><span class="feat-text">No Paid Tips – Purely Educational</span></div>
-      <div class="feat"><div class="feat-icon">⏳</div><span class="feat-text">5+ Years of Market Experience</span></div>
-      <div class="feat"><div class="feat-icon">👥</div><span class="feat-text">50,000+ Subscribers Trust Us</span></div>
+      <div class="feat"><div class="feat-icon">📘</div><span class="feat-text">Chart Basics & Risk Management</span></div>
+      <div class="feat"><div class="feat-icon">✅</div><span class="feat-text">Tap “Request to Join”, Admin Approves You</span></div>
     </div>
 
-    <div class="trust-line">✅ <b>Verified Channel</b> • Free Forever • No Spam</div>
+    <div class="trust-line">✅ <b>Free to Join</b> • No Spam</div>
 
-    <button class="btn-secondary telegram-link" id="telegramBtnBottom">
-      <i class="fab fa-telegram"></i> Join Now — It's 100% FREE
-    </button>
+    <a class="btn-secondary telegram-link" id="telegramBtnBottom" href="https://t.me/+iSwpbjdjjHk2Zjc9" data-tg>
+      <svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 3.2 18.5 20c-.25 1.18-.91 1.47-1.85.92l-5-3.68-2.41 2.32c-.27.27-.49.49-1 .49l.36-5.09 9.26-8.37c.4-.36-.09-.56-.63-.2L5.78 13.6.85 12.06c-1.07-.34-1.09-1.07.22-1.58L20.35 3c.9-.33 1.68.2 1.45.2Z"/></svg> Join Now — It's 100% FREE
+    </a>
   </div>
 
   <div class="disclaimer-wrap">
@@ -313,120 +339,200 @@ src="https://www.facebook.com/tr?id=1473631447956433&ev=PageView&noscript=1"
 </div>
 
 <div class="sticky-cta">
-  <a href="https://t.me/+iSwpbjdjjHk2Zjc9" id="telegramBtnSticky">
-    <i class="fab fa-telegram" style="font-size:17px;"></i>
+  <a href="https://t.me/+iSwpbjdjjHk2Zjc9" id="telegramBtnSticky" data-tg>
+    <svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 3.2 18.5 20c-.25 1.18-.91 1.47-1.85.92l-5-3.68-2.41 2.32c-.27.27-.49.49-1 .49l.36-5.09 9.26-8.37c.4-.36-.09-.56-.63-.2L5.78 13.6.85 12.06c-1.07-.34-1.09-1.07.22-1.58L20.35 3c.9-.33 1.68.2 1.45.2Z"/></svg>
     <span>Join Free Telegram Channel</span>
   </a>
 </div>
 
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="shT">
+  <div class="sh-box">
+    <button class="sh-x" id="shX" type="button" aria-label="Close">✕</button>
+    <h3 id="shT">Just 2 steps left</h3>
+    <div class="urdu" dir="rtl">بس 2 قدم باقی ہیں</div>
+    <ol>
+      <li><div>Tap the button below, Telegram opens<small dir="rtl" class="urdu">نیچے بٹن دبائیں، ٹیلی گرام کھلے گا</small></div></li>
+      <li><div>Tap <b>“Request to Join”</b>, the admin approves you<small dir="rtl" class="urdu">“Request to Join” دبائیں، ایڈمن آپ کو منظور کرے گا</small></div></li>
+    </ol>
+    <a class="btn" id="goBtn" href="https://t.me/+iSwpbjdjjHk2Zjc9"><svg class="tgi" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.8 3.2 18.5 20c-.25 1.18-.91 1.47-1.85.92l-5-3.68-2.41 2.32c-.27.27-.49.49-1 .49l.36-5.09 9.26-8.37c.4-.36-.09-.56-.63-.2L5.78 13.6.85 12.06c-1.07-.34-1.09-1.07.22-1.58L20.35 3c.9-.33 1.68.2 1.45.2Z"/></svg> Open Telegram · ٹیلی گرام کھولیں</a>
+  </div>
+</div>
+
+<div class="rb" id="rb"></div>
+
+<div class="ov" id="ov"><div class="box">
+  <h3>Telegram did not open?</h3>
+  <p>Tap a button below · نیچے بٹن دبائیں</p>
+  <a class="ob p" id="o1" href="#">Open Telegram App</a>
+  <a class="ob" id="o2" href="#">Open Telegram Link</a>
+  <button class="ob" id="o3" type="button">Copy Link</button>
+</div></div>
+
 <script>
-/* ================================================================
-   CONFIG
-   FIX: Pehle countdown ek ALAG Telegram link pe redirect kar raha
-   tha (+TrsirLWvplQ1YTEx) jabki buttons dusri link (+4XxSLo10...)
-   pe jate the — ab sab EK hi CONFIG.TELEGRAM_LINK use karte hain.
-   ================================================================ */
-const CONFIG = {
-  TELEGRAM_LINK: "https://t.me/+iSwpbjdjjHk2Zjc9",
-  COUNTDOWN_SECONDS: 20,
-  AUTO_REDIRECT_ENABLED: false, // sabko force-redirect nahi karte, sirf nudge
-  MIN_DWELL_MS: 1500,
-  pageLoadTime: Date.now(),
-  pageviewdelayMs: 3000,
-  passiveReaderDelayMs: 8000, 
-  minimumclicktimeMs: 1000,
-  REQUIRE_INTERACTION: true,
-  BOT_CHECK_ENABLED: true,
+(function(){
+"use strict";
+var CONFIG={
+  TELEGRAM_LINK:"https://t.me/+iSwpbjdjjHk2Zjc9",
+  INVITE:"iSwpbjdjjHk2Zjc9",
+  ignoreClickMs:1000,   /* first CTA tap inside 1s of load: Telegram still opens, no Lead */
+  minDwellMs:3000,      /* total VISIBLE time before the confirming tap counts as Lead */
+  minSheetMs:700,       /* confirm tap must come >=0.7s after the sheet opened (kills ghost/double taps) */
+  dedupHours:24,        /* one Lead per device per 24h (never blocks Telegram access) */
+  reportFiltered:true   /* custom "FilteredClick" event with the reason (diagnostics only) */
 };
+var TG=CONFIG.TELEGRAM_LINK, INV=CONFIG.INVITE, TGAPP="tg://join?invite="+INV;
 
-let pageLoadTime = Date.now();
-let hasScrolled = false;
-let hasMouseMoved = false;
-window.addEventListener('scroll', () => { hasScrolled = true; }, { once: true });
-document.addEventListener('mousemove', () => { hasMouseMoved = true; }, { once: true });
-document.addEventListener('touchstart', () => { hasMouseMoved = true; }, { once: true });
+var ua=navigator.userAgent||"";
+var isAnd=/Android/i.test(ua);
+var isIOS=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+var inApp=/FBAN|FBAV|FB_IAB|FBIOS|Instagram|Messenger/i.test(ua);
+var isBot=navigator.webdriver===true||/bot|crawl|spider|slurp|facebookexternalhit|Facebot|TelegramBot|HeadlessChrome|Lighthouse|PhantomJS|Selenium|Puppeteer|Playwright/i.test(ua);
 
-function isLikelyRealUser() {
-  const timeOnPage = Date.now() - pageLoadTime;
-  if (timeOnPage < CONFIG.MIN_DWELL_MS) return false;
-  if (CONFIG.REQUIRE_INTERACTION && !hasScrolled && !hasMouseMoved) return false;
-  return true;
+var ctas=[].slice.call(document.querySelectorAll('[data-tg]'));
+var goBtn=document.getElementById('goBtn');
+var sheet=document.getElementById('sheet'), rb=document.getElementById('rb'), ov=document.getElementById('ov');
+
+/* Telegram link is ALWAYS present and ALWAYS works */
+var appHref=TG, webHref=TG;
+if(isAnd&&inApp){
+  appHref="intent://join?invite="+INV+"#Intent;scheme=tg;package=org.telegram.messenger;S.browser_fallback_url="+encodeURIComponent(TG)+";end";
+  webHref="intent://t.me/+"+INV+"#Intent;scheme=https;package=com.android.chrome;end";
+}else if(isIOS&&inApp){
+  appHref=TGAPP; webHref=TG;
 }
+ctas.concat([goBtn]).forEach(function(b){b.setAttribute('href',appHref)});
 
-function isProbablyBot() {
-  if (!CONFIG.BOT_CHECK_ENABLED) return false;
-  if (navigator.webdriver) return true;
-  if (/bot|crawl|spider|slurp|headless/i.test(navigator.userAgent)) return true;
-  return false;
+function osName(){return isAnd?'android':(isIOS?'ios':'other')}
+function ev(n,custom,p){try{custom?fbq('trackCustom',n,p||{}):fbq('track',n,p||{})}catch(x){}}
+function eid(t){return t+'_'+Date.now()+'_'+Math.random().toString(36).slice(2,9)}
+function meta(){return {os:osName(),in_app:inApp?1:0}}
+
+/* ---------- visible-time + interaction tracking ---------- */
+var t0=Date.now(), visMs=0, visSince=(document.visibilityState==='visible')?Date.now():0;
+function visibleMs(){return visMs+(visSince?Date.now()-visSince:0)}
+
+/* ---------- qualified PageView: real human only ---------- */
+var pvDone=false, pvHuman=false;
+function sGet(k){try{return sessionStorage.getItem(k)==='1'}catch(x){return false}}
+function sSet(k){try{sessionStorage.setItem(k,'1')}catch(x){}}
+function checkPV(){
+  if(pvDone)return;
+  if(sGet('hst_pv')){pvDone=true;return}
+  if(isBot||document.visibilityState!=='visible')return;
+  var el=Date.now()-t0, byI=pvHuman&&el>=3000, byF=el>=8000&&document.hasFocus();
+  if(!byI&&!byF)return;
+  ev('PageView',0,{qualified_view:true,time_on_page:Math.round(el/1000)});
+  pvDone=true; sSet('hst_pv');
 }
-
-const fallbackLink = document.getElementById('fallbackLink');
-fallbackLink.href = CONFIG.TELEGRAM_LINK;
-
-let fired = false;
-
-function trackAndRedirect(event) {
-  if (event) event.preventDefault();
-  if (countdown) clearInterval(countdown);
-
-  if (fired) {
-    window.location.href = CONFIG.TELEGRAM_LINK;
-    return;
-  }
-  fired = true;
-
-  if (isProbablyBot()) {
-    window.location.href = CONFIG.TELEGRAM_LINK;
-    return;
-  }
-
-  const eventId = 'lead_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
-
-  if (typeof fbq !== 'undefined') {
-    if (isLikelyRealUser()) {
-      fbq('track', 'Lead', {
-        content_name: 'Shariah Trader Telegram Community',
-        value: '0.00',
-        currency: 'INR',
-      }, { eventID: eventId });
-    } else {
-      fbq('trackCustom', 'LowQualityClick', { eventID: eventId });
-    }
-  }
-
-  window.location.href = CONFIG.TELEGRAM_LINK;
-  setTimeout(() => { fallbackLink.classList.add('show'); }, 1200);
-}
-
-// Sab telegram buttons (top, mid, bottom, sticky) ek hi function share karte hain
-document.querySelectorAll('.telegram-link, #telegramBtnSticky').forEach(function (btn) {
-  btn.addEventListener('click', trackAndRedirect);
+['pointerdown','touchstart','keydown','scroll','mousemove'].forEach(function(n){
+  window.addEventListener(n,function(e){if(e.isTrusted){pvHuman=true;checkPV()}},{passive:true,once:true});
 });
+setTimeout(checkPV,3000); setTimeout(checkPV,8000);
 
-// ---- Countdown (visual urgency only — force-redirect nahi karta) ----
-let time = CONFIG.COUNTDOWN_SECONDS;
-const countTxt = document.getElementById('countTxt');
-const urgencyLine = document.getElementById('urgencyLine');
+/* ---------- persistent Lead de-dupe (localStorage + cookie) ---------- */
+var KEY='hst_lead_v2';
+function stored(){var v=null;try{v=localStorage.getItem(KEY)}catch(x){}
+  if(!v){var m=document.cookie.match(/(?:^|; )hst_lead_v2=([^;]*)/);if(m)v=m[1]}return v}
+function already(){var t=parseInt(stored(),10);return !!t&&(Date.now()-t)<CONFIG.dedupHours*36e5}
+function mark(){var v=String(Date.now());try{localStorage.setItem(KEY,v)}catch(x){}
+  try{document.cookie=KEY+'='+v+'; max-age='+(CONFIG.dedupHours*3600)+'; path=/; SameSite=Lax'}catch(x){}}
 
-const countdown = setInterval(function () {
-  time--;
-  if (countTxt) countTxt.textContent = time;
+/* ---------- confirm sheet: first CTA tap opens it (instructions + commitment), second tap opens Telegram ---------- */
+var sheetUsed=false, ctaTapAt=0, ctaTrusted=true, sheetOpenedAt=0;
+function openSheet(){
+  sheet.classList.add('show');
+  document.documentElement.style.overflow='hidden';
+  sheetOpenedAt=Date.now();
+  try{goBtn.focus({preventScroll:true})}catch(x){}
+}
+function closeSheet(track){
+  if(!sheet.classList.contains('show'))return;
+  sheet.classList.remove('show');
+  document.documentElement.style.overflow='';
+  if(track)ev('SheetClosed',1,meta());
+}
+document.getElementById('shX').addEventListener('click',function(){closeSheet(true)});
+sheet.addEventListener('click',function(e){if(e.target===sheet)closeSheet(true)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeSheet(true)});
 
-  if (time <= 0) {
-    clearInterval(countdown);
-    if (fired) return;
-
-    if (CONFIG.AUTO_REDIRECT_ENABLED) {
-      trackAndRedirect(null);
-    } else {
-      if (urgencyLine) urgencyLine.innerHTML = '👉 Tap the button above to join instantly';
-      document.querySelectorAll('.telegram-link, #telegramBtnSticky').forEach(function (btn) {
-        btn.classList.add('nudge');
-        setTimeout(function () { btn.classList.remove('nudge'); }, 3400);
-      });
-    }
+function onCta(e){
+  if(sheetUsed){ /* already confirmed once: link goes straight to Telegram, never a 2nd Lead */
+    tapAt=Date.now();opened=false;armStuck();return;
   }
-}, 1000);
+  e.preventDefault();
+  ctaTapAt=Date.now(); ctaTrusted=(e.isTrusted!==false);
+  openSheet();
+  ev('CTA_Tap',1,meta());
+}
+
+/* ---------- Lead filter: decides ONLY the pixel event ---------- */
+function filterReason(e){
+  if(e&&e.isTrusted===false||!ctaTrusted)return'untrusted';
+  if(isBot)return'bot';
+  if(ctaTapAt-t0<CONFIG.ignoreClickMs)return'too_fast';
+  if(visibleMs()<CONFIG.minDwellMs)return'short_dwell';
+  if(Date.now()-sheetOpenedAt<CONFIG.minSheetMs)return'sheet_too_quick';
+  if(already())return'duplicate';
+  return'';
+}
+
+var tapAt=0, opened=false, leadSent=false, reported=false, timer=null;
+
+/* Real <a href>: NO preventDefault, NO delay -> Telegram opens instantly on the confirming tap. */
+function onGo(e){
+  var reason=filterReason(e);
+  sheetUsed=true; tapAt=Date.now(); opened=false;
+  if(!reason&&!leadSent){
+    leadSent=true; mark();
+    try{fbq('track','Lead',{content_name:'Hafiz Shakil Trader Telegram',value:0,currency:'INR',time_on_page:Math.round((Date.now()-t0)/1000)},{eventID:eid('lead')})}catch(x){}
+  }else if(reason&&CONFIG.reportFiltered&&!reported){
+    reported=true;
+    ev('FilteredClick',1,{reason:reason,dwell_ms:Math.round(visibleMs())});
+  }
+  ev('TG_Tap',1,meta());
+  setTimeout(function(){closeSheet(false)},400);
+  armStuck();
+}
+function armStuck(){
+  clearTimeout(timer);
+  timer=setTimeout(function(){if(!opened&&!document.hidden)showStuck()},2500);
+}
+function gone(){ /* page went to background right after the tap = Telegram app opened */
+  if(tapAt&&!opened&&Date.now()-tapAt<8000){opened=true;clearTimeout(timer);ev('TG_Opened',1,meta())}
+}
+document.addEventListener('visibilitychange',function(){
+  if(document.hidden){gone();if(visSince){visMs+=Date.now()-visSince;visSince=0}}
+  else{visSince=Date.now();checkPV();if(tapAt&&Date.now()-tapAt>1500)showReturn()}
+});
+window.addEventListener('pagehide',gone);
+
+function showStuck(){
+  closeSheet(false);
+  document.getElementById('o1').setAttribute('href',appHref);
+  document.getElementById('o2').setAttribute('href',webHref);
+  ov.classList.add('show');
+  if(isIOS&&inApp)document.getElementById('ib').classList.add('show');
+  ev('TG_Stuck',1,meta());
+}
+/* back from Telegram: probably did not press "Request to Join" -> remind + reopen (never a 2nd Lead) */
+function showReturn(){
+  if(ov.classList.contains('show'))return;
+  rb.innerHTML='Did you tap <b>“Request to Join”</b> in Telegram?<small dir="rtl" class="urdu">کیا آپ نے ٹیلی گرام میں “Request to Join” دبایا؟</small><a href="'+appHref+'" id="rbA">Open Telegram again · دوبارہ کھولیں</a>';
+  rb.style.display='block';
+  ev('TG_Returned',1,meta());
+  var a=document.getElementById('rbA');
+  if(a)a.addEventListener('click',function(){tapAt=Date.now();opened=false;rb.style.display='none';armStuck()});
+}
+document.getElementById('o3').addEventListener('click',function(){
+  var b=document.getElementById('o3');
+  var done=function(){b.textContent='Copied ✓ - paste in Telegram/Chrome'};
+  try{navigator.clipboard.writeText(TG).then(done,function(){prompt('Copy link',TG)})}catch(x){prompt('Copy link',TG)}
+});
+window.addEventListener('pageshow',function(e){if(e.persisted&&tapAt){ov.classList.remove('show');showReturn()}});
+
+ctas.forEach(function(b){b.addEventListener('click',onCta)});
+goBtn.addEventListener('click',onGo);
+})();
 </script>
 
 </body>
